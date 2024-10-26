@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        IbmPlexSans: ['"ibm-plex-sans"', 'sans-serif'],
+        IbmPlexSansThai: ['"IBM plex sans thai"', 'sans-serif'],
       },
     
     },
