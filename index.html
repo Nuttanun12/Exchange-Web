@@ -7,6 +7,9 @@
   <link rel="icon" href="../material/nav-logo.svg" />
   <title>Exchange Product and Design </title>
   <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,40 +18,10 @@
     rel="stylesheet">
 </head>
 
-<body class="font-IbmPlexSansThai flex justify-center">
+<body class="font-IbmPlexSansThai flex flex-col items-center">
 
 
-  <nav
-    class="bg-white border-gray-200 w-full h-[4vw] opacity-98 border border-b-gray-300 pl-[20vw] fixed z-50 flex items-center">
-
-    <div class="flex w-[60vw] items-center justify-between">
-      <a href="index.html">
-        <img src="../material/nav-logo.svg" class="h-[2vw]" alt="Exchange Logo" />
-      </a>
-      <ul class="font-medium flex space-x-[2vw] items-center justify-end h-full">
-        <li>
-          <a href="index.html" class="text-gray-900 font-semibold text-[0.75vw]">Home</a>
-        </li>
-        <li>
-          <a href="about.html" class="text-gray-900 font-semibold text-[0.75vw]">About
-            us</a>
-        </li>
-        <li>
-          <a href="products.html" class="text-gray-900 font-semibold text-[0.75vw]">Products
-          </a>
-        </li>
-
-        <li class="flex items-center justify-center">
-          <button class="bg-[#242424] rounded-full hover:bg-[#686666] duration-300 flex justify-center items-center">
-            <a href="contact.html" class="text-white font-semibold text-[0.75vw] my-[0.25vw] mx-[1.6vw]">Contact us
-            </a>
-          </button>
-        </li>
-      </ul>
-
-    </div>
-
-  </nav>
+  <nav></nav>
 
   <div class="flex flex-col w-full items-center">
     <div class=" w-[60vw]">
@@ -65,7 +38,7 @@
             ไส้กรองอุตสาหกรรม
           </p>
           <div class="mt-[3vw] flex space-x-[1.5vw] items-center ">
-            <button class="bg-[#b21c2a] rounded-[0.65vw] hover:bg-[#D45561] duration-300">
+            <button class="bg-[#b21c2a] rounded-[0.65vw] hover:bg-[#D45561] duration-500">
               <a href="contact.html" class="block py-[0.4vw] px-[2.55vw] text-white font-normal text-[0.9vw]">
                 Contact us
               </a>
@@ -128,20 +101,11 @@
       <h2 class="text-center text-[2.1vw] font-bold">Products</h2>
       <div class="w-[60vw] flex justify-between mt-[1vw]">
 
-        <a href="#">
+        <a href="/dist/item.html?id=1">
           <div class="flex flex-col items-center">
             <div
-              class="bg-[#f5f6f6] w-[14.5vw] h-[14.5vw] hover:scale-105 duration-300 rounded-xl flex items-center justify-center">
-              <img src="../material/product_air_filter.png" alt="Air Filter" class="h-[15vw] w-[15vw]">
-            </div>
-            <p class="font-semibold text-[1.25vw] mt-[1vw]">Air Filter</p>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="flex flex-col items-center">
-            <div class="bg-[#f5f6f6] w-[14.5vw] h-[14.5vw] hover:scale-105 duration-300 rounded-xl flex items-center">
-              <img src="../material/product_oil_filter.png" alt="Oil Filter" class="h-[15vw] w-[15vw]">
+              class="bg-[#f5f6f6] w-[14vw] h-[14vw] hover:scale-105 duration-300 rounded-xl flex items-center justify-center">
+              <img src="../material/oil_filter_photo.png" alt="Oil Filter" class="h-[9vw] w-[9vw]">
             </div>
             <p class="font-semibold text-[1.25vw] mt-[1vw]">Oil Filter</p>
           </div>
@@ -149,7 +113,17 @@
 
         <a href="#">
           <div class="flex flex-col items-center">
-            <div class="bg-[#f5f6f6] w-[14.5vw] h-[14.5vw] hover:scale-105 duration-300 rounded-xl flex items-center">
+            <div
+              class="bg-[#f5f6f6] w-[14vw] h-[14vw] hover:scale-105 duration-300 rounded-xl flex items-center justify-center">
+              <img src="../material/pre_filter_photo.png" alt="Pre Filter" class="h-[15vw] w-[15vw]">
+            </div>
+            <p class="font-semibold text-[1.25vw] mt-[1vw]">Pre Filter</p>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="flex flex-col items-center">
+            <div class="bg-[#f5f6f6] w-[14.5vw] h-[14.5vw] hover:scale-105 duration-500 rounded-xl flex items-center">
               <img src="../material/product_bag_filter.png" alt="Bag Filter" class="h-[15vw] w-[15vw]">
             </div>
             <p class="font-semibold text-[1.25vw] mt-[1vw]">Bag Filter</p>
@@ -159,7 +133,7 @@
         <a href="products.html">
           <div class="flex flex-col items-center">
             <div
-              class="bg-[#f5f6f6] w-[14.5vw] h-[14.5vw] hover:scale-105 duration-300 rounded-xl flex items-center relative">
+              class="bg-[#f5f6f6] w-[14.5vw] h-[14.5vw] hover:scale-105 duration-500 rounded-xl flex items-center relative">
               <img src="../material/product_air_breather.png" alt="Air Breather" class="h-[15vw] w-[15vw] opacity-5">
               <p class="absolute inset-0 flex items-center justify-center text-[1.2vw] font-semibold">View All</p>
             </div>
@@ -227,7 +201,7 @@
               </div>
               <div>
                 <input type="submit" value="Submit"
-                  class="text-white text-[1.1vw] font-medium bg-[#b21c2a] rounded-[0.8vw] px-[2.5vw] py-[0.45vw] hover:bg-[#D45561] duration-300">
+                  class="text-white text-[1.1vw] font-medium bg-[#b21c2a] rounded-[0.8vw] px-[2.5vw] py-[0.45vw] hover:bg-[#D45561] duration-500">
               </div>
             </form>
           </div>
@@ -235,36 +209,7 @@
       </div>
     </div>
 
-    <footer class="w-full h-[23.5vw] bg-[#b21c2a] flex flex-col items-center">
-      <div
-        class="w-[60vw] h-[18vw] mt-[1.2vw] border-white border-t-[0.2vw] border-b-[0.11vw] border-opacity-30 flex items-center justify-between">
-        <img src="../material/footer_logo.svg" alt="Exchange Logo" class="h-[9vw]">
-        <div class="grid grid-cols-2 gap-y-[1vw]">
-          <div class="flex items-center gap-x-[0.8vw] col-span-2">
-            <img src="../material/icon_location_white.png" alt="Location icon" class="h-[1.5vw]">
-            <p class="text-white text-[0.72vw] font-light">389/157, Moo 6, Phraeksa, Mueang, Samutprakan, 10280</p>
-          </div>
-          <div class="flex items-center gap-x-[0.8vw]">
-            <img src="../material/icon_phone_white.png" alt="Phone icon" class="h-[1.5vw]">
-            <p class="text-white text-[0.72vw] font-light">061-426-2362</p>
-          </div>
-          <div class="flex items-center gap-x-[0.8vw]">
-            <img src="../material/icon_phone_white.png" alt="Phone icon" class="h-[1.5vw]">
-            <p class="text-white text-[0.72vw] font-light">063-826-5879</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="w-[60vw] mt-[2vw] flex justify-between">
-        <div class="flex gap-x-[5vw]">
-          <a href="about.html" class="text-white text-[0.6vw] font-light">ABOUT US</a>
-          <a href="contact.html" class="text-white text-[0.6vw] font-light">CONTACT US</a>
-          <a href="index.html" class="text-white text-[0.6vw] font-light">HOME</a>
-          <a href="products.html" class="text-white text-[0.6vw] font-light">PRODUCT</a>
-        </div>
-        <p class="text-white text-[0.6vw] font-light">Website designed and built by Nuttanun.jpr</p>
-      </div>
-    </footer>
+    <footer></footer>
 
   </div>
 
