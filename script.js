@@ -331,6 +331,18 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(footer);
   });
   
-  window.addEventListener("hashchange", () => {
-    history.replaceState(null, null, " "); // Removes hash from URL
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', event => {
+        const targetID = anchor.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetID);
+        if (targetElement) {
+          event.preventDefault(); // Stop the default hash update
+          targetElement.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll
+          history.replaceState(null, null, ' '); // Remove hash from the URL
+        }
+      });
+    });
   });
+
