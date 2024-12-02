@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Create the logo link
     const logoLink = document.createElement('a');
-    logoLink.href = 'index.html#home';
+    logoLink.href = './#home';
     
     const logoImg = document.createElement('img');
     logoImg.src = '../material/nav-logo.svg';
@@ -169,9 +169,9 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Define the navbar links
     const navbarLinks = [
-      { name: 'Home', href: 'index.html#home' },
-      { name: 'About us', href: 'about.html#about' },
-      { name: 'Products', href: 'products.html#product' },
+      { name: 'Home', href: './#home' },
+      { name: 'About us', href: './about#about' },
+      { name: 'Products', href: './products#product' },
       
     ];
   
