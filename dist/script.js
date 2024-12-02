@@ -169,9 +169,9 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Define the navbar links
     const navbarLinks = [
-      { name: 'Home', href: '/#home' },
-      { name: 'About us', href: '/about#about' },
-      { name: 'Products', href: '/products#product' },
+      { name: 'Home', href: 'index.html#home' },
+      { name: 'About us', href: 'about.html#about' },
+      { name: 'Products', href: 'products.html#product' },
       
     ];
   
