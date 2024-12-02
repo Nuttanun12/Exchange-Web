@@ -8,16 +8,97 @@ document.addEventListener("DOMContentLoaded", function () {
       type: 'Cartridge Filter',
       name: 'Oil Filter',
       description: 'ลดการสะสมของสิ่งเจือปนที่มีขนาดตั้งแต่ 0.1 ไมครอนขึ้นไป<br>ในผลิตภัณฑ์จากกระบวนการผลิตเพื่อให้ได้ผลิตภัณฑ์ที่มีความบริสุทธิ์ ปราศจากสารปนเปื้อน<br>รวมถึงป้องกันความเสียหายที่อาจเกิดขึ้นกับอุปกรณ์สำคัญต่างๆ<br>ลดระยะเวลาการหยุดทำงานของเครื่องจักร<br>และลดการใช้พลังงานในอุตสาหกรรมการผลิตน้ำมันและก๊าซ',
-      image: '../material/oil_filter_photo.png'
+      image: '../material/oil_filter_photo.png',
+      size: '12'
     },
     {
       id: 2,
-      type: '',
-      name: 'Product 2',
-      description: 'This is a description for Product 2.',
-      image: 'https://via.placeholder.com/400'
+      type: 'Cartridge Filter',
+      name: 'Suction Oil Filter',
+      description: 'เป็นระบบตัวกรองของเหลวที่มีประสิทธิภาพในการดูดอนุภาคของแข็งต่างๆ<br>สิ่งเจือปนจากของเหลว กรองได้ตั้งแต่ 0.1 ไมครอนขึ้นไป',
+      image: '../material/sub_oil_filter_photo.png',
+      size: '16'
     },
-    // Add more products here...
+    {
+      id: 3,
+      type: 'AHU',
+      name: 'Pre Filter',
+      description: 'เป็นด่านแรกสำหรับระบบกรองอากาศ ด้วยประสิทธิภาพจัดเก็บ<br>ฝุ่นละอองขนาดใหญ่ 1-10 ไมครอนได้มากถึง 99%<br>ช่วยให้อากาศสะอาดและบริสุทธิ์เพียงพอสำหรับการทำงานทั่วไป',
+      image: '../material/pre_filter_photo.png',
+      size: '16'
+    },
+    {
+      id: 4,
+      type: 'AHU',
+      name: 'Medium Filter',
+      description: 'แผ่นกรองอากาศขั้นที่ 2 ทำหน้าที่ช่วยกักเก็บฝุ่นที่ปนเปื้อนในอากาศ<br>ซึ่งเป็นสาเหตุของอากาศไม่สะอาด และสามารถกรองฝุ่นที่ระดับ EFF 65% - 95%',
+      image: '../material/medium_filter_photo.png',
+      size: '18'
+    },
+    {
+      id: 5,
+      type: 'AHU',
+      name: 'HEPA Filter',
+      description: 'มีประสิทธิภาพในการกรองฝุ่นที่สูงกว่าแบบปกติ สามารถดักจับฝุ่น สิ่งสกปรก ควัน หรือแม้แต่แบคทีเรียและเชื้อราที่ลอยอยู่ในอากาศได้มากขึ้น และละเอียดขึ้น โดยแผ่นกรอง HEPA<br>สามารถดักจับฝุ่นที่มีอนุภาคเล็ก 0.3 ไมครอน (EFF 95-99.99%)',
+      image: '../material/hepa_filter_photo.png',
+      size: '16'
+    },
+    {
+      id: 6,
+      type: 'Filter',
+      name: 'Water Filter',
+      description: 'ไส้กรองน้ำเป็นส่วนที่สำคัญที่สุดในเครื่องกรอง ตัวเครื่องกรองทำหน้าที่เป็นโครง แต่คุณสมบัติการกรองจะขึ้นอยู่กับไส้กรองน้ำ ซึ่งมีความสามารถในการกรองที่แตกต่างกันออกไป โดยหลักการทำงานของไส้กรองมี 2 แบบ คือแบบกรองโดยน้ำต้องทะลุผ่านไส้กรอง เช่น ไส้กรองหยาบ (PP) และแบบที่น้ำผสมทำปฏิกิริยากับสารกรอง เช่น ไส้กรองเรซิ่น โดยหน่วยวัดความสามารถของการกรองเราเรียกว่า ไมครอน ยิ่งไมครอนน้อย ก็จะมีประสิทธิภาพในการกรองที่ละเอียดมาก',
+      image: '../material/water_filter_photo.png',
+      size: '16'
+    },
+    {
+      id: 7,
+      type: 'Filter',
+      name: 'Bag Filter',
+      description: 'ไส้กรองแบบถุง สามารถกรองสิ่งที่ไม่ต้องการ สิ่งปนเปื้อนต่างๆ ออกไปได้ โดยสิ่งสกปรกนั้นจะติดอยู่ภายในถุงกรอง มีปริมาณการกรองสูงเนื่องจากมีพื้นที่ในการกรองมากกว่าแบบอื่น แต่คุณภาพการกรองต่ำกว่า เนื่องจากถุงกรองมีเพียงชั้นเดียว มักใช้สำหรับกระบวนการที่มีอัตราการไหลสูง รักษาอัตราการไหลของน้ำได้ดี กระบวนการผลิตเบื้องต้นที่ไม่ต้องการความละเอียดมากนัก สามารถติดตั้งถอดเปลี่ยนถุงกรองได้ง่าย ประหยัดเวลา',
+      image: '../material/product_bag_filter.png',
+      size: '16'
+    },
+    {
+      id: 8,
+      type: 'Air Breather Filter',
+      name: 'Air Breather',
+      description: 'สำหรับเครื่องจักรประเภทไฮดรอลิค:  ปริมาณน้ำมันในถังน้ำมันจะเปลี่ยนแปลงอยู่เสมอตามช่วงเวลาการทำงานของเครื่องจักร ทำให้มีอากาศไหลเข้า-ออก จากถังน้ำมันไฮดรอลิคตลอดเวลา อากาศจะนำความชื้นและอนุภาคขนาดเล็กผ่านช่องหายใจ (Air Breather) เข้าไปปนกับน้ำมัน จะทำให้น้ำมันสกปรก และเร่งการสึกหรอของเครื่องจักร',
+      image: '../material/product_air_breather.png',
+      size: '18'
+    },
+    {
+      id: 9,
+      type: 'Cartridge Filter',
+      name: 'Air Filter Polyester',
+      description: 'กรองฝุ่นที่ความเหนียว ความชื้น และความละเอียดมาก สามารถล้างน้ำได้ เช่น งานปูน งานเคมี งานแป้ง และงานเหล็ก กรองได้ 0.5 -10 ไมครอน',
+      image: '../material/air_filter_polyester_photo.png',
+      size: '16'
+    },
+    {
+      id: 10,
+      type: 'Cartridge Filter',
+      name: 'Air Filter PTFE',
+      description: 'กรองฝุ่นที่ความเหนียว ความชื้น และความละเอียดมาก สามารถล้างน้ำได้ เช่น งานปูน งานเคมี งานแป้ง และงานเหล็ก กรองได้ 0.5 -10 ไมครอน',
+      image: '../material/air_filter_ptfe_photo.png',
+      size: '16'
+    },
+    {
+      id: 11,
+      type: 'Cartridge Filter',
+      name: 'Air Filter Anti Static',
+      description: 'กรองฝุ่นที่ความเหนียว ความชื้น และความละเอียดมาก สามารถล้างน้ำได้<br>เช่น งานปูน งานเคมี งานแป้ง และงานเหล็ก<br>กรองได้ 0.5 -10 ไมครอน ป้องกันไฟฟ้าสถิต',
+      image: '../material/air_filter_anti_static_photo.png',
+      size: '14'
+    },
+    {
+      id: 12,
+      type: 'Cartridge Filter',
+      name: 'Air Filter Cellulose',
+      description: 'กระดาษกรอง ล้างน้ำไม่ได้ กรองได้ตั้งแต่ 5 ไมครอนขึ้นไป',
+      image: '../material/air_filter_cellulose_photo.png',
+      size: '16'
+    },
   ];
 
   // Get product ID from URL (e.g. product.html?id=1)
@@ -43,8 +124,8 @@ function createProductDetail(product) {
     <div class="w-[60vw] my-[10vw] flex flex-col items-start">
         <h2 class="text-center font-bold mb-[2vw] text-[2.1vw] ">${product.type}</h2>
         <div class="flex gap-[5vw]">
-            <div class="bg-[#f5f6f6] w-[18.2vw] h-[18.2vw] hover:scale-105 duration-500 rounded-xl flex items-center justify-center basis-[18.2vw]">
-                <img src="${product.image}" alt="${product.name}" class="h-[12vw] w-[12vw] rounded-lg">
+            <div class="bg-[#f5f6f6] w-[50vw] h-[18.2vw] hover:scale-105 duration-500 rounded-xl flex items-center justify-center basis-[18.2vw]">
+                <img src="${product.image}" alt="${product.name}" class="h-[${product.size}vw] rounded-lg">
             </div>
             <div class="flex flex-col items-start justify-between basis-[41.8vw]">
               <h2 class="font-bold mb-[1vw] text-[2.1vw]">${product.name}</h2>
@@ -73,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Create the logo link
     const logoLink = document.createElement('a');
-    logoLink.href = 'index.html';
+    logoLink.href = 'index.html#home';
     
     const logoImg = document.createElement('img');
     logoImg.src = '../material/nav-logo.svg';
@@ -88,9 +169,9 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Define the navbar links
     const navbarLinks = [
-      { name: 'Home', href: 'index.html' },
-      { name: 'About us', href: 'about.html' },
-      { name: 'Products', href: 'products.html' },
+      { name: 'Home', href: 'index.html#home' },
+      { name: 'About us', href: 'about.html#about' },
+      { name: 'Products', href: 'products.html#product' },
       
     ];
   
@@ -116,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
     button.classList.add('bg-[#242424]', 'rounded-full', 'hover:bg-[#686666]', 'duration-500', 'flex', 'justify-center', 'items-center');
     
     const contactLink = document.createElement('a');
-    contactLink.href = 'contact.html';
+    contactLink.href = 'contact.html#contact';
     contactLink.classList.add('text-white', 'font-semibold', 'text-[0.75vw]', 'my-[0.25vw]', 'mx-[1.6vw]');
     contactLink.textContent = 'Contact us';
   
@@ -219,10 +300,10 @@ document.addEventListener("DOMContentLoaded", function () {
     linksContainer.classList.add('flex', 'gap-x-[5vw]');
   
     const links = [
-      { name: 'ABOUT US', href: 'about.html' },
-      { name: 'CONTACT US', href: 'contact.html' },
-      { name: 'HOME', href: 'index.html' },
-      { name: 'PRODUCT', href: 'products.html' }
+      { name: 'ABOUT US', href: 'about.html#about' },
+      { name: 'CONTACT US', href: 'contact.html#contact' },
+      { name: 'HOME', href: 'index.html#home' },
+      { name: 'PRODUCT', href: 'products.html#product' }
     ];
   
     links.forEach(link => {
