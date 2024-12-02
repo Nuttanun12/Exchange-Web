@@ -331,4 +331,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(footer);
   });
   
-  
+  window.addEventListener("hashchange", () => {
+    history.replaceState(null, null, " "); // Removes hash from URL
+  });
