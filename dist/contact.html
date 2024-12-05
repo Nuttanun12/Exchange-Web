@@ -7,6 +7,16 @@
     <link rel="icon" href="../material/nav-logo.svg" />
     <title>Exchange Product and Design </title>
     <link href="style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init({
+             publicKey: "tIHXfdEMICyWkVGJa",
+           });
+        })();
+     </script>
     <script src="script.js"></script>
 
 
@@ -51,34 +61,35 @@
                             <div class="h-[3.5vw] w-[3.5vw] bg-[#e2e2e2] rounded-full flex justify-center items-center">
                                 <img src="../material/icon_location.png" alt="Location icon" class="h-[1.8vw]">
                             </div>
-                            <p class="text-[1.1vw] font-bold">389/157, Moo 6, Phraeksa,<br>Mueang, Samutprakan, 10280</p>
+                            <p class="text-[1.1vw] font-bold">389/157, Moo 6, Phraeksa,<br>Mueang, Samutprakan, 10280
+                            </p>
                         </div>
                     </div>
                     <div class=" w-[35vw] h-full">
-                        <form action="" class="grid grid-cols-2 gap-x-[1.5vw] gap-y-[0.5vw]">
+                        <form id="contact-form" action="" class="grid grid-cols-2 gap-x-[1.5vw] gap-y-[0.5vw]">
                             <div class="flex flex-col">
                                 <label for="Name" class="text-[1.1vw] text-[#282828] font-medium">Name</label>
-                                <input type="text" name="Name"
+                                <input type="text" name="Name" id="Name"
                                     class="bg-white border border-gray-300 rounded-sm text-[1.2vw] text-gray-700 p-[0.5vw] w-full">
                             </div>
                             <div class="flex flex-col">
                                 <label for="Email" class="text-[1.1vw] text-[#282828] font-medium">Email Address</label>
-                                <input type="text" name="Email"
+                                <input type="text" name="Email" id="Email"
                                     class="bg-white border border-gray-300 rounded-sm text-[1.2vw] text-gray-700 p-[0.5vw] w-full">
                             </div>
                             <div class="flex flex-col">
                                 <label for="Phone" class="text-[1.1vw] text-[#282828] font-medium">Phone Number</label>
-                                <input type="text" name="Phone"
+                                <input type="text" name="Phone" id="Phone"
                                     class="bg-white border border-gray-300 rounded-sm text-[1.2vw] text-gray-700 p-[0.5vw] w-full">
                             </div>
                             <div class="flex flex-col">
                                 <label for="Topic" class="text-[1.1vw] text-[#282828] font-medium">Topic</label>
-                                <input type="text" name="Topic"
+                                <input type="text" name="Topic" id="Topic"
                                     class="bg-white border border-gray-300 rounded-sm text-[1.2vw] text-gray-700 p-[0.5vw] w-full">
                             </div>
                             <div class="col-span-2 flex flex-col">
-                                <label for="Massage" class="text-[1.1vw] text-[#282828] font-medium">Massage</label>
-                                <textarea name="Massage" rows="4"
+                                <label for="Message" class="text-[1.1vw] text-[#282828] font-medium">Message</label>
+                                <textarea name="Message" rows="4" id="Message"
                                     class="bg-white border border-gray-300 rounded-sm text-[1.2vw] text-gray-700 p-[0.5vw] w-full"></textarea>
                             </div>
                             <div>
@@ -98,10 +109,10 @@
                 width="100%" height="100%" tite="Google maps" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        
+
         <footer></footer>
 
-  
+
     </div>
 
 

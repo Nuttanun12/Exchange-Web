@@ -139,196 +139,225 @@ function createProductDetail(product) {
         </div>
     </div>
   `;
-  
+
   return container;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Create the nav element
-    const nav = document.createElement('nav');
-    nav.classList.add('bg-white', 'border-gray-200', 'w-full', 'h-[4vw]', 'opacity-98', 'border', 'border-b-gray-300', 'pl-[20vw]', 'fixed', 'z-50', 'flex', 'items-center', );
-  
-    // Create the container div
-    const container = document.createElement('div');
-    container.classList.add('flex', 'w-[60vw]', 'items-center', 'justify-between');
-    
-    // Create the logo link
-    const logoLink = document.createElement('a');
-    logoLink.href = 'index.html#home';
-    
-    const logoImg = document.createElement('img');
-    logoImg.src = '../material/nav-logo.svg';
-    logoImg.classList.add('h-[2vw]');
-    logoImg.alt = 'Exchange Logo';
-    
-    logoLink.appendChild(logoImg);
-  
-    // Create the ul element for links
-    const navbarLinksContainer = document.createElement('ul');
-    navbarLinksContainer.classList.add('font-medium', 'flex', 'space-x-[2vw]', 'items-center', 'justify-end', 'h-full');
-  
-    // Define the navbar links
-    const navbarLinks = [
-      { name: 'Home', href: 'index.html#home' },
-      { name: 'About us', href: 'about.html#about' },
-      { name: 'Products', href: 'products.html#product' },
-      
-    ];
-  
-    // Loop through navbar links and append them
-    navbarLinks.forEach(link => {
-      const li = document.createElement('li');
-      li.classList.add('font-semibold', 'text-gray-900', 'text-[0.75vw]');
-      
-      const a = document.createElement('a');
-      a.href = link.href;
-      a.classList.add('text-gray-900');
-      a.textContent = link.name;
-  
-      li.appendChild(a);
-      navbarLinksContainer.appendChild(li);
-    });
-  
-    // Create the button for Contact Us
-    const buttonContainer = document.createElement('li');
-    buttonContainer.classList.add('flex', 'items-center', 'justify-center');
-  
-    const button = document.createElement('button');
-    button.classList.add('bg-[#242424]', 'rounded-full', 'hover:bg-[#686666]', 'duration-500', 'flex', 'justify-center', 'items-center');
-    
-    const contactLink = document.createElement('a');
-    contactLink.href = 'contact.html#contact';
-    contactLink.classList.add('text-white', 'font-semibold', 'text-[0.75vw]', 'my-[0.25vw]', 'mx-[1.6vw]');
-    contactLink.textContent = 'Contact us';
-  
-    button.appendChild(contactLink);
-    buttonContainer.appendChild(button);
-    navbarLinksContainer.appendChild(buttonContainer);
-  
-    // Append everything to the container
-    container.appendChild(logoLink);
-    container.appendChild(navbarLinksContainer);
-  
-    // Append the container to the nav
-    nav.appendChild(container);
-  
-    // Finally, append the nav to the body (or any other element)
-    document.body.appendChild(nav);
+  // Create the nav element
+  const nav = document.createElement('nav');
+  nav.classList.add('bg-white', 'border-gray-200', 'w-full', 'h-[4vw]', 'opacity-98', 'border', 'border-b-gray-300', 'pl-[20vw]', 'fixed', 'z-50', 'flex', 'items-center',);
+
+  // Create the container div
+  const container = document.createElement('div');
+  container.classList.add('flex', 'w-[60vw]', 'items-center', 'justify-between');
+
+  // Create the logo link
+  const logoLink = document.createElement('a');
+  logoLink.href = 'index.html#home';
+
+  const logoImg = document.createElement('img');
+  logoImg.src = '../material/nav-logo.svg';
+  logoImg.classList.add('h-[2vw]');
+  logoImg.alt = 'Exchange Logo';
+
+  logoLink.appendChild(logoImg);
+
+  // Create the ul element for links
+  const navbarLinksContainer = document.createElement('ul');
+  navbarLinksContainer.classList.add('font-medium', 'flex', 'space-x-[2vw]', 'items-center', 'justify-end', 'h-full');
+
+  // Define the navbar links
+  const navbarLinks = [
+    { name: 'Home', href: 'index.html#home' },
+    { name: 'About us', href: 'about.html#about' },
+    { name: 'Products', href: 'products.html#product' },
+
+  ];
+
+  // Loop through navbar links and append them
+  navbarLinks.forEach(link => {
+    const li = document.createElement('li');
+    li.classList.add('font-semibold', 'text-gray-900', 'text-[0.75vw]');
+
+    const a = document.createElement('a');
+    a.href = link.href;
+    a.classList.add('text-gray-900');
+    a.textContent = link.name;
+
+    li.appendChild(a);
+    navbarLinksContainer.appendChild(li);
   });
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    // Create the footer element
-    const footer = document.createElement('footer');
-    footer.classList.add('w-full', 'h-[23.5vw]', 'bg-[#b21c2a]', 'flex', 'flex-col', 'items-center');
-  
-    // Create the top section of the footer
-    const topSection = document.createElement('div');
-    topSection.classList.add('w-[60vw]', 'h-[18vw]', 'mt-[1.2vw]', 'border-white', 'border-t-[0.2vw]', 'border-b-[0.11vw]', 'border-opacity-30', 'flex', 'items-center', 'justify-between');
-  
-    // Create the footer logo image
-    const footerLogo = document.createElement('img');
-    footerLogo.src = '../material/footer_logo.svg';
-    footerLogo.alt = 'Exchange Logo';
-    footerLogo.classList.add('h-[9vw]');
-  
-    // Create the contact info grid container
-    const contactInfoContainer = document.createElement('div');
-    contactInfoContainer.classList.add('grid', 'grid-cols-2', 'gap-y-[1vw]');
-  
-    // Create the location section
-    const locationSection = document.createElement('div');
-    locationSection.classList.add('flex', 'items-center', 'gap-x-[0.8vw]', 'col-span-2');
-  
-    const locationIcon = document.createElement('img');
-    locationIcon.src = '../material/icon_location_white.png';
-    locationIcon.alt = 'Location icon';
-    locationIcon.classList.add('h-[1.5vw]');
-  
-    const locationText = document.createElement('p');
-    locationText.classList.add('text-white', 'text-[0.72vw]', 'font-light');
-    locationText.textContent = '389/157, Moo 6, Phraeksa, Mueang, Samutprakan, 10280';
-  
-    locationSection.appendChild(locationIcon);
-    locationSection.appendChild(locationText);
-  
-    // Create the phone sections
-    const phoneSection1 = document.createElement('div');
-    phoneSection1.classList.add('flex', 'items-center', 'gap-x-[0.8vw]');
-  
-    const phoneIcon1 = document.createElement('img');
-    phoneIcon1.src = '../material/icon_phone_white.png';
-    phoneIcon1.alt = 'Phone icon';
-    phoneIcon1.classList.add('h-[1.5vw]');
-  
-    const phoneText1 = document.createElement('p');
-    phoneText1.classList.add('text-white', 'text-[0.72vw]', 'font-light');
-    phoneText1.textContent = '061-426-2362';
-  
-    phoneSection1.appendChild(phoneIcon1);
-    phoneSection1.appendChild(phoneText1);
-  
-    const phoneSection2 = document.createElement('div');
-    phoneSection2.classList.add('flex', 'items-center', 'gap-x-[0.8vw]');
-  
-    const phoneIcon2 = document.createElement('img');
-    phoneIcon2.src = '../material/icon_phone_white.png';
-    phoneIcon2.alt = 'Phone icon';
-    phoneIcon2.classList.add('h-[1.5vw]');
-  
-    const phoneText2 = document.createElement('p');
-    phoneText2.classList.add('text-white', 'text-[0.72vw]', 'font-light');
-    phoneText2.textContent = '063-826-5879';
-  
-    phoneSection2.appendChild(phoneIcon2);
-    phoneSection2.appendChild(phoneText2);
-  
-    // Append the contact info sections
-    contactInfoContainer.appendChild(locationSection);
-    contactInfoContainer.appendChild(phoneSection1);
-    contactInfoContainer.appendChild(phoneSection2);
-  
-    // Append logo and contact info to the top section
-    topSection.appendChild(footerLogo);
-    topSection.appendChild(contactInfoContainer);
-  
-    // Create the bottom section of the footer (links and text)
-    const bottomSection = document.createElement('div');
-    bottomSection.classList.add('w-[60vw]', 'mt-[2vw]', 'flex', 'justify-between');
-  
-    // Create the links
-    const linksContainer = document.createElement('div');
-    linksContainer.classList.add('flex', 'gap-x-[5vw]');
-  
-    const links = [
-      { name: 'ABOUT US', href: 'about.html#about' },
-      { name: 'CONTACT US', href: 'contact.html#contact' },
-      { name: 'HOME', href: 'index.html#home' },
-      { name: 'PRODUCT', href: 'products.html#product' }
-    ];
-  
-    links.forEach(link => {
-      const linkElement = document.createElement('a');
-      linkElement.href = link.href;
-      linkElement.classList.add('text-white', 'text-[0.6vw]', 'font-light');
-      linkElement.textContent = link.name;
-      linksContainer.appendChild(linkElement);
-    });
-  
-    // Add the copyright text
-    const copyrightText = document.createElement('p');
-    copyrightText.classList.add('text-white', 'text-[0.6vw]', 'font-light');
-    copyrightText.textContent = 'Website designed and built by Nuttanun.jpr';
-  
-    // Append everything to the bottom section
-    bottomSection.appendChild(linksContainer);
-    bottomSection.appendChild(copyrightText);
-  
-    // Append the top and bottom sections to the footer
-    footer.appendChild(topSection);
-    footer.appendChild(bottomSection);
-  
-    // Append the footer to the body (or any other element)
-    document.body.appendChild(footer);
+
+  // Create the button for Contact Us
+  const buttonContainer = document.createElement('li');
+  buttonContainer.classList.add('flex', 'items-center', 'justify-center');
+
+  const button = document.createElement('button');
+  button.classList.add('bg-[#242424]', 'rounded-full', 'hover:bg-[#686666]', 'duration-500', 'flex', 'justify-center', 'items-center');
+
+  const contactLink = document.createElement('a');
+  contactLink.href = 'contact.html#contact';
+  contactLink.classList.add('text-white', 'font-semibold', 'text-[0.75vw]', 'my-[0.25vw]', 'mx-[1.6vw]');
+  contactLink.textContent = 'Contact us';
+
+  button.appendChild(contactLink);
+  buttonContainer.appendChild(button);
+  navbarLinksContainer.appendChild(buttonContainer);
+
+  // Append everything to the container
+  container.appendChild(logoLink);
+  container.appendChild(navbarLinksContainer);
+
+  // Append the container to the nav
+  nav.appendChild(container);
+
+  // Finally, append the nav to the body (or any other element)
+  document.body.appendChild(nav);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Create the footer element
+  const footer = document.createElement('footer');
+  footer.classList.add('w-full', 'h-[23.5vw]', 'bg-[#b21c2a]', 'flex', 'flex-col', 'items-center');
+
+  // Create the top section of the footer
+  const topSection = document.createElement('div');
+  topSection.classList.add('w-[60vw]', 'h-[18vw]', 'mt-[1.2vw]', 'border-white', 'border-t-[0.2vw]', 'border-b-[0.11vw]', 'border-opacity-30', 'flex', 'items-center', 'justify-between');
+
+  // Create the footer logo image
+  const footerLogo = document.createElement('img');
+  footerLogo.src = '../material/footer_logo.svg';
+  footerLogo.alt = 'Exchange Logo';
+  footerLogo.classList.add('h-[9vw]');
+
+  // Create the contact info grid container
+  const contactInfoContainer = document.createElement('div');
+  contactInfoContainer.classList.add('grid', 'grid-cols-2', 'gap-y-[1vw]');
+
+  // Create the location section
+  const locationSection = document.createElement('div');
+  locationSection.classList.add('flex', 'items-center', 'gap-x-[0.8vw]', 'col-span-2');
+
+  const locationIcon = document.createElement('img');
+  locationIcon.src = '../material/icon_location_white.png';
+  locationIcon.alt = 'Location icon';
+  locationIcon.classList.add('h-[1.5vw]');
+
+  const locationText = document.createElement('p');
+  locationText.classList.add('text-white', 'text-[0.72vw]', 'font-light');
+  locationText.textContent = '389/157, Moo 6, Phraeksa, Mueang, Samutprakan, 10280';
+
+  locationSection.appendChild(locationIcon);
+  locationSection.appendChild(locationText);
+
+  // Create the phone sections
+  const phoneSection1 = document.createElement('div');
+  phoneSection1.classList.add('flex', 'items-center', 'gap-x-[0.8vw]');
+
+  const phoneIcon1 = document.createElement('img');
+  phoneIcon1.src = '../material/icon_phone_white.png';
+  phoneIcon1.alt = 'Phone icon';
+  phoneIcon1.classList.add('h-[1.5vw]');
+
+  const phoneText1 = document.createElement('p');
+  phoneText1.classList.add('text-white', 'text-[0.72vw]', 'font-light');
+  phoneText1.textContent = '061-426-2362';
+
+  phoneSection1.appendChild(phoneIcon1);
+  phoneSection1.appendChild(phoneText1);
+
+  const phoneSection2 = document.createElement('div');
+  phoneSection2.classList.add('flex', 'items-center', 'gap-x-[0.8vw]');
+
+  const phoneIcon2 = document.createElement('img');
+  phoneIcon2.src = '../material/icon_phone_white.png';
+  phoneIcon2.alt = 'Phone icon';
+  phoneIcon2.classList.add('h-[1.5vw]');
+
+  const phoneText2 = document.createElement('p');
+  phoneText2.classList.add('text-white', 'text-[0.72vw]', 'font-light');
+  phoneText2.textContent = '063-826-5879';
+
+  phoneSection2.appendChild(phoneIcon2);
+  phoneSection2.appendChild(phoneText2);
+
+  // Append the contact info sections
+  contactInfoContainer.appendChild(locationSection);
+  contactInfoContainer.appendChild(phoneSection1);
+  contactInfoContainer.appendChild(phoneSection2);
+
+  // Append logo and contact info to the top section
+  topSection.appendChild(footerLogo);
+  topSection.appendChild(contactInfoContainer);
+
+  // Create the bottom section of the footer (links and text)
+  const bottomSection = document.createElement('div');
+  bottomSection.classList.add('w-[60vw]', 'mt-[2vw]', 'flex', 'justify-between');
+
+  // Create the links
+  const linksContainer = document.createElement('div');
+  linksContainer.classList.add('flex', 'gap-x-[5vw]');
+
+  const links = [
+    { name: 'ABOUT US', href: 'about.html#about' },
+    { name: 'CONTACT US', href: 'contact.html#contact' },
+    { name: 'HOME', href: 'index.html#home' },
+    { name: 'PRODUCT', href: 'products.html#product' }
+  ];
+
+  links.forEach(link => {
+    const linkElement = document.createElement('a');
+    linkElement.href = link.href;
+    linkElement.classList.add('text-white', 'text-[0.6vw]', 'font-light');
+    linkElement.textContent = link.name;
+    linksContainer.appendChild(linkElement);
   });
-  
-  
+
+  // Add the copyright text
+  const copyrightText = document.createElement('p');
+  copyrightText.classList.add('text-white', 'text-[0.6vw]', 'font-light');
+  copyrightText.textContent = 'Website designed and built by Nuttanun.jpr';
+
+  // Append everything to the bottom section
+  bottomSection.appendChild(linksContainer);
+  bottomSection.appendChild(copyrightText);
+
+  // Append the top and bottom sections to the footer
+  footer.appendChild(topSection);
+  footer.appendChild(bottomSection);
+
+  // Append the footer to the body (or any other element)
+  document.body.appendChild(footer);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  emailjs.init('tIHXfdEMICyWkVGJa');
+
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', sendMail);
+
+  function sendMail(event) {
+      event.preventDefault();
+
+      const params = {
+          topic: document.getElementById("Topic").value,
+          from_name: document.getElementById("Name").value,
+          email: document.getElementById("Email").value,
+          phone: document.getElementById("Phone").value,
+          message: document.getElementById("Message").value
+      };
+
+      emailjs.send('service_dtzwrw6', 'template_ttuc5du', params).then(
+          function(response) {
+              console.log('SUCCESS!', response.status, response.text);
+              location.reload();
+          },
+          function(error) {
+              console.log('FAILED...', error);
+          }
+      );
+  }
+});
+
+
