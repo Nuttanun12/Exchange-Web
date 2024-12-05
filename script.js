@@ -346,3 +346,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    emailjs.init('tIHXfdEMICyWkVGJa');
+  
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', sendMail);
+  
+    function sendMail(event) {
+        event.preventDefault();
+  
+        const params = {
+            topic: document.getElementById("Topic").value,
+            from_name: document.getElementById("Name").value,
+            email: document.getElementById("Email").value,
+            phone: document.getElementById("Phone").value,
+            message: document.getElementById("Message").value
+        };
+  
+        emailjs.send('service_dtzwrw6', 'template_ttuc5du', params).then(
+            function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                location.reload();
+            },
+            function(error) {
+                console.log('FAILED...', error);
+            }
+        );
+    }
+  });
